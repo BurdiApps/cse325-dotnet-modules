@@ -1,0 +1,17 @@
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Directories
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Directories.deps.json
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Directories.runtimeconfig.json
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Directories.dll
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Directories.pdb
+/Users/jamesburdick/School/cse325/Tutorials/Directories/bin/Debug/net10.0/Newtonsoft.Json.dll
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.csproj.AssemblyReference.cache
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.AssemblyInfoInputs.cache
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.AssemblyInfo.cs
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.csproj.CoreCompileInputs.cache
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Director.FFFC8DA1.Up2Date
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.dll
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/refint/Directories.dll
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.pdb
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/Directories.genruntimeconfig.cache
+/Users/jamesburdick/School/cse325/Tutorials/Directories/obj/Debug/net10.0/ref/Directories.dll

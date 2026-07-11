@@ -1,0 +1,14 @@
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/bin/Debug/net10.0/VsCodeDebugger
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/bin/Debug/net10.0/VsCodeDebugger.deps.json
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/bin/Debug/net10.0/VsCodeDebugger.runtimeconfig.json
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/bin/Debug/net10.0/VsCodeDebugger.dll
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/bin/Debug/net10.0/VsCodeDebugger.pdb
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.AssemblyInfoInputs.cache
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.AssemblyInfo.cs
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.csproj.CoreCompileInputs.cache
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.dll
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/refint/VsCodeDebugger.dll
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.pdb
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/VsCodeDebugger.genruntimeconfig.cache
+/Users/jamesburdick/School/cse325/Tutorials/VsCodeDebugger/obj/Debug/net10.0/ref/VsCodeDebugger.dll

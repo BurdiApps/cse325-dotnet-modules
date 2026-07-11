@@ -1,0 +1,14 @@
+/Users/jamesburdick/School/cse325/MyConsoleApp/bin/Debug/net10.0/MyConsoleApp
+/Users/jamesburdick/School/cse325/MyConsoleApp/bin/Debug/net10.0/MyConsoleApp.deps.json
+/Users/jamesburdick/School/cse325/MyConsoleApp/bin/Debug/net10.0/MyConsoleApp.runtimeconfig.json
+/Users/jamesburdick/School/cse325/MyConsoleApp/bin/Debug/net10.0/MyConsoleApp.dll
+/Users/jamesburdick/School/cse325/MyConsoleApp/bin/Debug/net10.0/MyConsoleApp.pdb
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.AssemblyInfoInputs.cache
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.AssemblyInfo.cs
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.csproj.CoreCompileInputs.cache
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.dll
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/refint/MyConsoleApp.dll
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.pdb
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/MyConsoleApp.genruntimeconfig.cache
+/Users/jamesburdick/School/cse325/MyConsoleApp/obj/Debug/net10.0/ref/MyConsoleApp.dll
