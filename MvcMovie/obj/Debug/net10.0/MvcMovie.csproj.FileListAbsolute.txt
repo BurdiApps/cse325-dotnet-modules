@@ -268,7 +268,6 @@
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/MvcMovie.csproj.AssemblyReference.cache
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/MvcMovie.csproj.Up2Date
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/bin/Debug/net10.0/libman.json
-/Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/8151r5ozgn-{0}-5ipweew5fc-5ipweew5fc.gz
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/gln79jq0fq-{0}-bqjiyaj88i-bqjiyaj88i.gz
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/q1i67nasf5-{0}-c2jlpeoesf-c2jlpeoesf.gz
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/4ano3cjzd5-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -450,3 +449,4 @@
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/xp3h2q5eyi-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/7tpgvl3x37-{0}-muycvpuwrr-muycvpuwrr.gz
 /Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/kk6x8kwsgs-{0}-87fc7y1x7t-87fc7y1x7t.gz
+/Users/jamesburdick/School/cse325/Tutorials/MvcMovie/obj/Debug/net10.0/compressed/8151r5ozgn-{0}-1tbl8gnxrl-1tbl8gnxrl.gz

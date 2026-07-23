@@ -1,0 +1,24 @@
+input, select, textarea {
+    padding: 8px 12px;
+    margin: 4px 0;
+}
+
+input, select, textarea {
+    padding: 8px 12px;
+    margin: 4px 0;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #ffe4ff !important;
+}
