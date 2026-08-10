@@ -28,3 +28,4 @@
 /Users/jamesburdick/School/cse325/Tutorials/ConnectFour/obj/Debug/net8.0/ConnectFour.pdb
 /Users/jamesburdick/School/cse325/Tutorials/ConnectFour/obj/Debug/net8.0/ConnectFour.genruntimeconfig.cache
 /Users/jamesburdick/School/cse325/Tutorials/ConnectFour/obj/Debug/net8.0/ref/ConnectFour.dll
+/Users/jamesburdick/School/cse325/Tutorials/ConnectFour/obj/Debug/net8.0/scopedcss/Components/Board.razor.rz.scp.css

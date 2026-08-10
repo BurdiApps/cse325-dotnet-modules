@@ -1,5 +1,157 @@
-<h3>Board</h3>
+@using System.Drawing
+@inject GameState State
+@inject IJSRuntime JS
+
+<HeadContent>
+    <style>
+        :root {
+            --board-bg: @ColorTranslator.ToHtml(BoardColor);
+            --player1: @ColorTranslator.ToHtml(Player1Color);
+            --player2: @ColorTranslator.ToHtml(Player2Color);
+        }
+    </style>
+</HeadContent>
+
+<nav>
+    @for (byte i = 0; i < 7; i++)
+    {
+        var col = i;
+        <span title="Click to play a piece" @onclick="() => PlayPiece(col)">🔽</span>
+    }
+</nav>
+
+<article>
+    @winnerMessage <button style="@ResetStyle" @onclick="ResetGame">Reset the game</button>
+    <br />
+    <span class="alert-danger">@errorMessage</span>
+    <span class="alert-info">@CurrentTurn</span>
+    <br />
+    <span class="alert-success">Moves this game: @State.CurrentTurn</span>
+    @if (bestScoreP1 is not null)
+    {
+      <span> | Best win (Player 1): @bestScoreP1 moves</span>
+    }
+
+    @if (bestScoreP2 is not null)
+    {
+      <span> | Best win (Player 2): @bestScoreP2 moves</span>
+    }
+    <br />
+    <button @onclick="ClearScores"> Clear high scores</button>
+</article>
+
+<div>
+    <div class="board">
+        @for (var i = 0; i < 42; i++)
+        {
+            <span class="container">
+                <span></span>
+            </span>
+        }
+    </div>
+    @for (var i = 0; i < 42; i++)
+    {
+        <span class="@pieces[i]"></span>
+    }
+</div>
 
 @code {
+    [Parameter]
+    public Color BoardColor { get; set; } = ColorTranslator.FromHtml("yellow");
 
+    [Parameter]
+    public Color Player1Color { get; set; } = ColorTranslator.FromHtml("red");
+
+    [Parameter]
+    public Color Player2Color { get; set; } = ColorTranslator.FromHtml("blue");
+
+    private string[] pieces = new string[42];
+    private string winnerMessage = string.Empty;
+    private string errorMessage = string.Empty;
+
+    private int? bestScoreP1;
+    private int? bestScoreP2;
+
+    private string CurrentTurn => (winnerMessage == string.Empty) ? $"Player {State.PlayerTurn}'s Turn" : "";
+    private string ResetStyle => (winnerMessage == string.Empty) ? "display: none;" : "";
+
+    protected override void OnInitialized()
+    {
+        State.ResetBoard();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+      if (firstRender)
+      {
+        bestScoreP1 = await LoadScore("bestScoreP1");
+        bestScoreP2 = await LoadScore("bestScoreP2");
+        StateHasChanged();
+      }
+    }
+
+    private async Task<int?> LoadScore(string key)
+    {
+        var val = await JS.InvokeAsync<string>("localStorage.getItem", key);
+        return int.TryParse(val, out var n) ? n : null;
+    }
+
+    private async Task SaveScore(string key, int value)
+    {
+        await JS.InvokeVoidAsync("localStorage.setItem",key, value.ToString());
+    }
+    private async Task PlayPiece(byte col)
+    {
+        errorMessage = string.Empty;
+        try
+        {
+            var player = State.PlayerTurn;
+            var turn = State.CurrentTurn;
+            var landingRow = State.PlayPiece(col);
+            pieces[turn] = $"player{player} col{col} drop{landingRow}";
+        }
+        catch (ArgumentException ex)
+        {
+            errorMessage = ex.Message;
+        }
+
+        var win = State.CheckForWin();
+        winnerMessage = State.CheckForWin() switch
+        {
+            GameState.WinState.Player1_Wins => "Player 1 Wins!",
+            GameState.WinState.Player2_Wins => "Player 2 Wins!",
+            GameState.WinState.Tie => "It's a tie!",
+            _ => ""
+        };
+
+        int totalMoves = State.CurrentTurn;
+        if (win == GameState.WinState.Player1_Wins &&
+            (bestScoreP1 is null ||  totalMoves < bestScoreP1))
+        {
+            bestScoreP1 = totalMoves;
+            await SaveScore("bestScoreP1", totalMoves);
+        }
+          else if (win == GameState.WinState.Player2_Wins &&
+                 (bestScoreP2 is null || totalMoves < bestScoreP2))
+        {
+            bestScoreP2 = totalMoves;
+            await SaveScore("bestScoreP2", totalMoves);
+        }
+    }
+
+    void ResetGame()
+    {
+        State.ResetBoard();
+        winnerMessage = string.Empty;
+        errorMessage = string.Empty;
+        pieces = new string[42];
+    }
+
+    async Task ClearScores()
+    {
+        await JS.InvokeVoidAsync("localStorage.removeItem", "bestScoreP1");
+        await JS.InvokeVoidAsync("localStorage.removeItem", "bestScoreP2"); 
+        bestScoreP1 = null;
+        bestScoreP2 = null;
+    }
 }
